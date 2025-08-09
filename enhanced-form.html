@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DBT Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Dr Bilal Tech Academy</h1>
+
+
+      
+    </header>
+
+    <section>
+        <h2>1. Introduction</h2>
+      <h3>Favorite Programming Languages</h3>
+      <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>HTML &amp; CSS</li>
+        <li>Java</li>
+      </ul>
+      <h3>Modules</h3>
+      <ol>
+        <li>HTML5 Forms</li>
+        <li>Media Embedding</li>
+        <li>Tables &amp; Lists</li>
+        <li>Advanced Form Techniques</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Sample Student Table</h2>
+      <table border="1">
+        <caption>Web Development Student Marks</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Assignment</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>HTML5 Forms</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Media Embedding</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>Carol</td>
+            <td>Tables &amp; Lists</td>
+            <td>92</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. Media</h2>
+        <p>Here are some media examples:</p>
+        <h3>IMAGE</h3>
+       <img src="Brain.jpg" alt="Brain just for coding" width="400" height="300">
+       
+       <h3>AUDIO</h3>
+       <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        <p>We code by speed of horse</p>
+        Your browser does not support the audio element.
+      </audio>
+
+        <h3>VIDEO</h3>
+        <video width="320" height="180" controls>
+        <source src="talent.mp4" type="video/mp4">
+        <p>Watch our students' IQ</p>
+        Your browser does not support the video tag.
+      </video>
+      
+    </section>
+
+    <section>
+      <h2>4. Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50" placeholder="Enter your full name" autocomplete="name">
+          <br>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email">
+            <br>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9_]{5,15}$" minlength="5" maxlength="15" placeholder="5-15 letters/numbers/_" autocomplete="username">
+         <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters" autocomplete="new-password">
+            <br>
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" required minlength="8" placeholder="Re-enter password" autocomplete="new-password">
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="favlang">Favorite Language:</label>
+          <select id="favlang" name="favlang" required>
+            <option value="">--Select--</option>
+            <option value="js">JavaScript</option>
+            <option value="py">Python</option>
+            <option value="java">Java</option>
+            <option value="html">HTML &amp; CSS</option>
+          </select>
+            <br>
+          <label>
+            <input type="checkbox" name="newsletter" value="yes" unchecked>
+            Subscribe to newsletter
+          </label>
+            <br>
+          <label>Gender:</label>
+          <label><input type="radio" name="gender" value="male" required> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Other Information</legend>
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="3" maxlength="200" placeholder="Tell us about yourself"></textarea>
+            <br>
+          <label for="referral">Referral Code:</label>
+          <input type="text" id="referral" name="referral" value="PLP2025" readonly class="readonly">
+        </fieldset>
+        <br>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
